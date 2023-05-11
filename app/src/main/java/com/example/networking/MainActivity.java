@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
         Gson gson = new Gson();
         Type type = new TypeToken<ArrayList<Mountain>>() {}.getType();
         ArrayList<Mountain> data = gson.fromJson(json, type);
-        //berg.addAll(data);
-        //adapter.notifyDataSetChanged();
+        berg.addAll(data);
+        adapter.notifyDataSetChanged();
     }
 }
